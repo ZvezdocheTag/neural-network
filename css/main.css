@@ -1,0 +1,528 @@
+/* Размеры включают в себя border, padding */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* Замена длинного текста многоточием */
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+input::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+input:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+/* курсор для label отменяет выделение при клике */
+label {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* ТОлько вертикальный ресайз для textarea */
+textarea {
+  resize: vertical;
+}
+/* Убираем дефолтный курсив */
+address {
+  font-style: normal;
+}
+/* Адаптивный img */
+img {
+  height: auto;
+  max-width: 100%;
+  width: auto\9;
+}
+/* Перенос слов */
+.break-word {
+  word-wrap: break-word;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+body,
+html {
+  height: 100%;
+}
+img,
+fieldset,
+a img {
+  border: none;
+}
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+textarea {
+  overflow: auto;
+}
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+input,
+textarea,
+select,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+a:focus {
+  outline: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  * {
+    -webkit-text-size-adjust: none;
+  }
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+a {
+  color: #00bad4;
+  text-decoration: none;
+}
+
+/*Project*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+  
+}
+
+body {
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+.p-header {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+   background: #202122;
+   
+  overflow: hidden;
+  
+}
+
+.p-header__inner {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.p-header__title {
+  text-transform: uppercase;
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.p-header__slogan {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  margin-top: 20px;
+  
+}
+
+
+.p-descriptions {
+  color: #000;
+  width: 100%;
+  background-color: #fff;
+}
+
+.p-descriptions__2 {
+  padding-top: 100px;
+}
+
+.p-descriptions__inner {
+  padding: 3%;
+}
+
+.p-descriptions__title {
+  margin-bottom: 20px;
+}
+
+.p-descriptions__text {
+  vertical-align: top;
+  padding: 15px;
+  margin-left: -5px;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+
+.text {
+
+  margin-bottom: 20px;
+}
+
+.text__note {
+  margin-bottom: 40px;
+}
+
+.list {
+  
+}
+
+.list__item {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding-left: 10px;
+  margin-left: 8px;
+}
+.list__item:before {
+  content: '.';
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  font-size: 20px;
+}
+
+.gallery {
+ background-color: #FFF;
+  
+}
+
+.section__title {
+  width:  40%;
+  font-size:  24px;
+  padding:  15px 3%;
+  margin-bottom:  40px;
+  border-bottom:  2px solid #333;
+}
+
+.p-gallery__title {
+  margin-left: 3%;
+}
+
+.gallery:after,.gallery:before {
+  content:  '';
+  display: table; 
+}
+.gallery:before,.gallery:after {
+  clear: both;  
+}
+
+
+.gallery__caption {
+  background-color: #fff;
+}
+
+.gallery__item  {
+  position: relative;
+  vertical-align: top;
+  height: 500px;
+  overflow: hidden; 
+}
+
+
+.gallery__item--caption {
+  position: absolute; 
+  display: block; 
+  z-index: 50;
+  font-size:  16px;
+  color:  #333;
+  top:  70%;
+  padding: 0 10% 10%;  
+}
+
+
+figure {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gallery__link {
+  display: block;
+  position: absolute;
+  width: inherit;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.5);
+  z-index: 49;
+}
+.gallery__link:hover {
+  
+  background-color: rgba(0,0,0, 0.1);
+ 
+}
+
+.icon-share2:before {
+    content: "\e900";
+    font-size: 30px;
+}
+
+
+.gallery__img {
+  display: block;
+  position: absolute;
+ height: 300px;
+ z-index: 1;
+}
+
+.p-descriptions__img {
+  margin-top: 40px;
+  
+  text-align: center;
+}
+
+.p-descriptions__img--caption {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.caption {
+  margin-top: 80px;
+}
+
+.caption__title {
+  margin-bottom: 10px;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-3 {
+  float: left;  
+  width: 33.333333%;
+}
+
+
+.col-70 {
+  width: 70%;
+}
+
+.col-20 {
+  width: 20%;
+}
+.col-40 {
+  width: 40%;
+}
+
+.p-footer {
+  position: relative; 
+  display: block; 
+  width:  100%;
+  height: 100px;
+   background: #202122;
+
+}
+
+.footer__text {
+  font-size: 13px;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 20%;
+  color: #dcdcdc;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 568px) {
+ .col-50, .col-30 {
+  width: 100%;
+}
+
+.col-3 {
+  float: left;  
+  width: 100%;
+}
+
+
+.col-70 {
+  width: 100%;
+}
+
+.col-20 {
+  width: 100%;
+}
+.col-40 {
+  width: 100%;
+}
+
+ .p-header__title {
+    font-size: 30px;
+  }
+
+  .p-descriptions__img--caption {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 768px) {
+
+.p-header__title {
+    font-size: 48px;
+  }
+
+  .col-3 {
+  float: left;  
+  width: 50%;
+}
+
+ .col-50, .col-30 {
+  width: 100%;
+}
+
+.col-3:last-child {
+  width: 100%;
+}
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .col-3 {
+  float: left;  
+  width: 50%;
+}
+
+.col-3:last-child {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.col-3:last-child img {
+  padding: 0 5%;
+}
+  
+}
+
